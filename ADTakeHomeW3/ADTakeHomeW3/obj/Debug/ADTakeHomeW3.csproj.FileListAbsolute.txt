@@ -1,0 +1,12 @@
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\bin\Debug\ADTakeHomeW3.exe.config
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\bin\Debug\ADTakeHomeW3.exe
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\bin\Debug\ADTakeHomeW3.pdb
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.csproj.AssemblyReference.cache
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.csproj.SuggestedBindingRedirects.cache
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.MainWindowForm.resources
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.SecondWindowForm.resources
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.Properties.Resources.resources
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.csproj.GenerateResource.cache
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.csproj.CoreCompileInputs.cache
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.exe
+D:\TUGAS KULIAH\SEMESTER 2\Application Development\w3 ad\ADTakeHomeW3\ADTakeHomeW3\obj\Debug\ADTakeHomeW3.pdb
