@@ -17,7 +17,7 @@ namespace ADTakeHomeW3
         {
             InitializeComponent();
         }
-        /*public Color TextBoxName
+        public Color TextBoxName
         {
             get { return textboxname.ForeColor; }
             set { textboxname.ForeColor = value; }
@@ -26,7 +26,7 @@ namespace ADTakeHomeW3
         {
             get { return textboxartist.ForeColor; }
             set { textboxartist.ForeColor = value; }
-        }*/
+        }
         private void buttonsubmit_Click(object sender, EventArgs e)
         {
             SecondWindowForm form2 = Application.OpenForms["SecondWindowForm"] as SecondWindowForm;

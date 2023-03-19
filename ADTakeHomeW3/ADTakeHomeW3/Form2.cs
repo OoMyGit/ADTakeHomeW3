@@ -59,20 +59,20 @@ namespace ADTakeHomeW3
                 else if (radioredtext.Checked == true)
                 {
                     form.ForeColor = Color.Red;
-                    //form.TextBoxName = Color.Red;
-                    //form.TextBoxArtist= Color.Red;
+                    form.TextBoxName = Color.Red;
+                    form.TextBoxArtist= Color.Red;
                 }
                 else if (radiopurpletext.Checked == true)
                 {
                     form.ForeColor = Color.Purple;
-                    //form.TextBoxName = Color.Purple;
-                    //form.TextBoxArtist = Color.Purple;
+                    form.TextBoxName = Color.Purple;
+                    form.TextBoxArtist = Color.Purple;
                 }
                 else if (radioorangetext.Checked == true)
                 {
                     form.ForeColor = Color.Orange;
-                    //form.TextBoxName = Color.Orange;
-                    //form.TextBoxArtist = Color.Orange;
+                    form.TextBoxName = Color.Orange;
+                    form.TextBoxArtist = Color.Orange;
                 }
                 if (salah == 0 && form != null) 
                 {
