@@ -88,6 +88,7 @@
             this.checktruefirst.TabIndex = 5;
             this.checktruefirst.Text = "All of the content I put above is true!";
             this.checktruefirst.UseVisualStyleBackColor = true;
+            this.checktruefirst.CheckedChanged += new System.EventHandler(this.checktruefirst_CheckedChanged);
             // 
             // buttonsubmit
             // 
@@ -113,6 +114,7 @@
             this.Controls.Add(this.buttonopen);
             this.Name = "MainWindowForm";
             this.Text = "Main Window Form";
+            this.Load += new System.EventHandler(this.MainWindowForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

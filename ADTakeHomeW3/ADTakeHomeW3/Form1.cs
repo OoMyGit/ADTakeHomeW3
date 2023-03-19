@@ -13,12 +13,11 @@ namespace ADTakeHomeW3
 {
     public partial class MainWindowForm : Form
     {
-        //SecondWindowForm form2 = new SecondWindowForm();
         public MainWindowForm()
         {
             InitializeComponent();
         }
-        public Color TextBoxName
+        /*public Color TextBoxName
         {
             get { return textboxname.ForeColor; }
             set { textboxname.ForeColor = value; }
@@ -27,26 +26,51 @@ namespace ADTakeHomeW3
         {
             get { return textboxartist.ForeColor; }
             set { textboxartist.ForeColor = value; }
-        }
+        }*/
         private void buttonsubmit_Click(object sender, EventArgs e)
         {
             SecondWindowForm form2 = Application.OpenForms["SecondWindowForm"] as SecondWindowForm;
             if (Application.OpenForms["SecondWindowForm"] != null && checktruefirst.Checked==true)
             {
-                //this.labelhi.Text = "";
-                //textboxname.ForeColor= Color.Red;
-                string kata = $"Hi, my name is " + textboxname.Text + " and my favorite artist is " + textboxartist.Text;
-                form2.LabelHi = kata;
-                //form2.Close();
-                //form2.Show();
-                //form2.Update();
-                form2.Refresh();
+                if (textboxname.Text == "" || textboxartist.Text == "")
+                {
+                    MessageBox.Show("Enter Correct Input", "WARNING", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    string kata = $"Hi, my name is " + textboxname.Text + " and my favorite artist is " + textboxartist.Text;
+                    form2.LabelHi = kata;
+                    form2.Refresh();
+                }
             }
         }
         private void buttonopen_Click(object sender, EventArgs e)
         {
             SecondWindowForm form2 = new SecondWindowForm();
             form2.Show();
+            if (Application.OpenForms["SecondWindowForm"] != null && checktruefirst.Checked == true)
+            {
+                buttonsubmit.Enabled = true;
+            }
+            else
+            {
+                buttonsubmit.Enabled = false;
+            }
+        }
+        private void checktruefirst_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["SecondWindowForm"] != null && checktruefirst.Checked == true)
+            {
+                buttonsubmit.Enabled= true;
+            }
+            else
+            {
+                buttonsubmit.Enabled= false;
+            }
+        }
+        private void MainWindowForm_Load(object sender, EventArgs e)
+        {
+            buttonsubmit.Enabled = false;
         }
     }
 }

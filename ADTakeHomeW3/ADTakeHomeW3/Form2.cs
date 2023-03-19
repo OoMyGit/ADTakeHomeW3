@@ -23,52 +23,91 @@ namespace ADTakeHomeW3
         }
         private void buttonmagic_Click(object sender, EventArgs e)
         {
+            int salah = 0;
             if (checkagreesecond.Checked==true && checktruesecond.Checked==true)
             {
                 MainWindowForm form = Application.OpenForms["MainWindowForm"] as MainWindowForm;
-                if (radiopinkbg.Checked==true)
+                if ((radiopinkbg.Checked == false && radioyellowbg.Checked == false && radiogreenbg.Checked == false && radiobluebg.Checked == false && radiolightgraybg.Checked == false) || (radioredtext.Checked == false && radiopurpletext.Checked == false && radioorangetext.Checked == false))
+                {
+                    salah++;
+                }
+                else if (radiopinkbg.Checked==true)
                 {
                     form.BackColor = Color.Pink;
                 }
-                if (radioyellowbg.Checked == true)
+                else if (radioyellowbg.Checked == true)
                 {
                     form.BackColor = Color.Yellow;
                 }
-                if (radiogreenbg.Checked == true)
+                else if (radiogreenbg.Checked == true)
                 {
                     form.BackColor = Color.Green;
                 }
-                if (radiobluebg.Checked == true)
+                else if (radiobluebg.Checked == true)
                 {
                     form.BackColor = Color.Blue;
                 }
-                if (radiolightgraybg.Checked == true)
+                else if (radiolightgraybg.Checked == true)
                 {
                     form.BackColor = Color.LightGray;
                 }
-                if (radioredtext.Checked == true)
+
+                if ((radiopinkbg.Checked == false && radioyellowbg.Checked == false && radiogreenbg.Checked == false && radiobluebg.Checked == false && radiolightgraybg.Checked == false) || (radioredtext.Checked == false && radiopurpletext.Checked == false && radioorangetext.Checked == false))
+                {
+                    salah++;
+                }
+                else if (radioredtext.Checked == true)
                 {
                     form.ForeColor = Color.Red;
-                    form.TextBoxName = Color.Red;
-                    form.TextBoxArtist= Color.Red;
+                    //form.TextBoxName = Color.Red;
+                    //form.TextBoxArtist= Color.Red;
                 }
-                if (radiopurpletext.Checked == true)
+                else if (radiopurpletext.Checked == true)
                 {
                     form.ForeColor = Color.Purple;
-                    form.TextBoxName = Color.Purple;
-                    form.TextBoxArtist = Color.Purple;
+                    //form.TextBoxName = Color.Purple;
+                    //form.TextBoxArtist = Color.Purple;
                 }
-                if (radioorangetext.Checked == true)
+                else if (radioorangetext.Checked == true)
                 {
                     form.ForeColor = Color.Orange;
-                    form.TextBoxName = Color.Orange;
-                    form.TextBoxArtist = Color.Orange;
+                    //form.TextBoxName = Color.Orange;
+                    //form.TextBoxArtist = Color.Orange;
                 }
-                //if (MainWindowForm.ActiveForm==null)
-                if (form != null) 
+                if (salah == 0 && form != null) 
                 {
                     form.Refresh();
                 }
+                else
+                {
+                    MessageBox.Show("Choose Color", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+        private void SecondWindowForm_Load(object sender, EventArgs e)
+        {
+            buttonmagic.Enabled = false;
+        }
+        private void checkagreesecond_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkagreesecond.Checked == true && checktruesecond.Checked == true)
+            {
+                buttonmagic.Enabled = true;
+            }
+            else
+            {
+                buttonmagic.Enabled = false;
+            }
+        }
+        private void checktruesecond_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkagreesecond.Checked == true && checktruesecond.Checked == true)
+            {
+                buttonmagic.Enabled = true;
+            }
+            else
+            {
+                buttonmagic.Enabled = false;
             }
         }
     }

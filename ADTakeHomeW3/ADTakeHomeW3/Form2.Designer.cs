@@ -163,6 +163,7 @@
             this.checkagreesecond.TabIndex = 10;
             this.checkagreesecond.Text = "I agree to the Terms of Agreement";
             this.checkagreesecond.UseVisualStyleBackColor = true;
+            this.checkagreesecond.CheckedChanged += new System.EventHandler(this.checkagreesecond_CheckedChanged);
             // 
             // checktruesecond
             // 
@@ -173,6 +174,7 @@
             this.checktruesecond.TabIndex = 11;
             this.checktruesecond.Text = "All the choice I pick above are true";
             this.checktruesecond.UseVisualStyleBackColor = true;
+            this.checktruesecond.CheckedChanged += new System.EventHandler(this.checktruesecond_CheckedChanged);
             // 
             // buttonmagic
             // 
@@ -231,6 +233,7 @@
             this.Controls.Add(this.labelbgcolor);
             this.Name = "SecondWindowForm";
             this.Text = "Second Window Form";
+            this.Load += new System.EventHandler(this.SecondWindowForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
